@@ -16,23 +16,15 @@ const List = () => {
 
   return (
     <div className='container' >
-<ul>
-  <li>Name</li>
-  <li>UserName</li>
-  <li>Email</li>
-</ul>
+
       {post.map(user => {
         return (
           <div  key={user.id}>
-            <ul>
-              <li>{user.name}</li>
-            </ul>
+           
             <ul>
               <li>{user.username}</li>
             </ul>
-            <ul>
-              <li>{user.email}</li>
-            </ul>
+           
           </div>
         )
       })}
