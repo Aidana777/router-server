@@ -6,16 +6,14 @@
 
 .container {
   width: 500px;
+  height: 60px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 10px;
+
 }
 
-li {
-  text-align: center;
-  align-items: center;
-  width: 180px;
-  margin-left: 20px;
-
+ul {
+  margin-left: 15px;
+  
 }
