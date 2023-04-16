@@ -20,6 +20,7 @@ const List = () => {
       {post.map(user => {
         return (
           <div className='container' key={user.id}>
+
             <ul>
               <li>{user.name}</li>
             </ul>
