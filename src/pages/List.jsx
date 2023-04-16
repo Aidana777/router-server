@@ -10,16 +10,24 @@ const List = () => {
       .get(url)
       .then(data => {
         setPost(data.data);
+        console.log(data.data);
       })
   }, [])
 
   return (
     <div>
+
       {post.map(user => {
         return (
-          <div key={user.id}>
+          <div className='container' key={user.id}>
+            <ul>
+              <li>{user.name}</li>
+            </ul>
             <ul>
               <li>{user.username}</li>
+            </ul>
+            <ul>
+              <li>{user.email}</li>
             </ul>
           </div>
         )
